@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Churrascômetro</title>
+</head>
+<body>
+    <script src="./script.js"></script>
+    <header>
+       
+        <img src="./img/icone-churrascometro.png" alt=""> 
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Quantidade de Pessoas</h1>
+            <div class="quant">
+                
+                <div class="man">
+                    <h2>Homens</h2>
+                    <input type="range" list="tickmarks" value="0" min="0" max="50" id="quant-man" oninput="displayMan.value=value" onchange="displayMan.value=value">
+                    <input type="text" id="displayMan" readonly> 
+                        <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="10">
+                            <option value="20">
+                            <option value="30">
+                            <option value="40">
+                            <option value="50">
+                        </datalist>
+                </div>
+
+                <div class="woman">
+                    <h2>Mulheres</h2>
+                    <input type="range" list="tickmarks" value="0" min="0" max="50" id="quant-woman" oninput="display.value=value" onchange="display.value=value">
+                    <input type="text" id="displayWoman" readonly> 
+                        <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="10">
+                            <option value="20">
+                            <option value="30">
+                            <option value="40">
+                            <option value="50">
+                        </datalist>
+
+                </div>
+
+                <div class="kid">
+                    <h2>Crianças</h2>
+                    <input type="range" list="tickmarks" value="0" min="0" max="50" id="quant-kid" oninput="displayKid.value=value" onchange="displayKid.value=value">
+                    <input type="text" id="displayKid" readonly> 
+                        <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="10">
+                            <option value="20">
+                            <option value="30">
+                            <option value="40">
+                            <option value="50">
+                        </datalist>
+                </div>
+           
+                
+            </div>
+
+            <div class="food">
+                <h1>Tipos de carne</h1>
+
+                <div class="food-choices">
+                    <div>
+                        <input type = "checkbox" id = "foodChoice" name = "Picanha" value = "picanha">
+                        <label> Picanha </label>
+                    </div>
+
+                    <div>
+                        <input type = "checkbox" id = "foodChoice" name = "Picanha Suína" value = "picanha-suina">
+                        <label> Picanha Suína </label>
+                    </div>
+
+                    <div>
+                        <input type = "checkbox" id = "foodChoice" name = "Fraudinha" value = "fraudinha">
+                        <label> Fraudinha </label>
+                    </div>
+
+                    <div>
+                        <input type = "checkbox" id = "foodChoice" name = "Calabresa" value = "calabresa">
+                        <label> Calabresa </label>
+                    </div>
+
+                    <div>
+                        <input type = "checkbox" id = "foodChoice" name = "Frango" value = "frango">
+                        <label> Frango </label>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="acompanhamento">
+                <h1>Tipos de acompanhamento</h1>
+
+                <div class="acomp-choices">
+                    <div>
+                        <input type = "checkbox" id = "acompChoice" name = "Queijo Coalho" value = "queijo-coalho">
+                        <label> Queijo Coalho </label>
+                    </div>
+
+                    <div>
+                        <input type = "checkbox" id = "acompChoice" name = "Vinagrete" value = "vinagrete">
+                        <label> Vinagrete </label>
+                    </div>
+
+                    <div>
+                        <input type = "checkbox" id = "acompChoice" name = "Farofa" value = "farofa">
+                        <label> Farofa </label>
+                    </div>
+
+                    <div>
+                        <input type = "checkbox" id = "acompChoice" name = "Pão de Alho" value = "pao-de-alho">
+                        <label> Pão de Alho </label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="drinks">
+                <h1>Tipos de bebida</h1>
+
+                <div class="drinks-choices">
+                    <div>
+                        <input type = "checkbox" id = "drinkChoice" name = "Cerveja" value = "cerveja">
+                        <label> Cerveja </label>
+                    </div>
+
+                    <div>
+                        <input type = "checkbox" id = "drinkChoice" name = "Refrigerante" value = "refrigerante">
+                        <label> Refrigerante </label>
+                    </div>
+
+                    <div>
+                        <input type = "checkbox" id = "drinkChoice" name = "Água" value = "água">
+                        <label> Água </label>
+                    </div>
+
+                    <div>
+                        <input type = "checkbox" id = "drinkChoice" name = "Suco" value = "suco">
+                        <label> Suco </label>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="suply">
+                <h1>Suprimentos</h1>
+
+                <div class="suply-choices">
+                    <div>
+                        <input type = "checkbox" id = "suplyChoice" name = "Carvão" value = "carvao">
+                        <label> Carvão </label>
+                    </div>
+
+                    <div>
+                        <input type = "checkbox" id = "suplyChoice" name = "Pratos e Talheres" value = "pratos-talheres">
+                        <label> Pratos e Talheres </label>
+                    </div>
+
+                    <div>
+                        <input type = "checkbox" id = "suplyChoice" name = "Copo" value = "copo">
+                        <label> Copo </label>
+                    </div>
+
+                    <div>
+                        <input type = "checkbox" id = "suplyChoice" name = "Guardanapo" value = "guardanapo">
+                        <label> Guardanapo </label>
+                    </div>
+
+                </div>
+            </div>            
+        </div>
+
+        <div class="btn">
+        <button onclick="gerar();">Gerar</button>
+    </div>
+        
+    </main>
+    
+
+
+    <footer>
+
+    </footer>
+
+
+
+    
+
+</body>
+</html>
+
